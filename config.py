@@ -20,7 +20,7 @@ BROADCAST_ADMIN_ID = [5709622852]
 # --------- ᴍᴏɴɢᴏ ᴅʙ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ---------
 DATABASE_URI = "mongodb+srv://MrsFallenBot:MrsFallenBot@cluster0.hsedwn2.mongodb.net/?retryWrites=true&w=majority"
 DATABASE_NAME = "Cluster0"
-COLLECTION_NAME = 'Telegram_files'
+COLLECTION_NAME = 'HanCock_Files'
 
 
 # --------- ʙᴏᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ---------
