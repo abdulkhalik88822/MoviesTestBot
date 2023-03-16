@@ -1,0 +1,15 @@
+heroku3== 5.2.0
+pyrogram==2.0.97
+pyromod==2.0.0
+tgcrypto== 1.2.5
+requests==2.28.2
+
+pymongo[srv]
+motor
+marshmallow
+umongo
+
+requests
+bs4
+parse-torrent-name
+aiohttp
