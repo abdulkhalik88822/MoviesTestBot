@@ -95,30 +95,7 @@ async def send_for_index(bot, message):
         return await message.reply(
             f'ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɪɴᴅᴇx ᴛʜɪs ᴄʜᴀɴɴᴇʟ|ɢʀᴏᴜᴘ ?\n\nᴄʜᴀᴛ ɪᴅ / ᴜsᴇʀɴᴀᴍᴇ: <code>{chat_id}</code>\nʟᴀsᴛ ᴍᴇssᴀɢᴇ ɪᴅ: <code>{last_msg_id}</code>',
             reply_markup=reply_markup)
-
-    if type(chat_id) is int:
-        try:
-            link = (await bot.create_chat_invite_link(chat_id)).invite_link
-        except ChatAdminRequired:
-            return await message.reply('ᴍᴀᴋᴇ sᴜʀᴇ ɪ ᴀᴍ ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴄʜᴀᴛ ᴀɴᴅ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ ɪɴᴠɪᴛᴇ ᴜsᴇʀs.')
-    else:
-        link = f"@{message.forward_from_chat.username}"
-    buttons = [
-        [
-            InlineKeyboardButton('ᴀᴄᴄᴇᴘᴛ ɪɴᴅᴇx',
-                                 callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')
-        ],
-        [
-            InlineKeyboardButton('ʀᴇᴊᴇᴄᴛ ɪɴᴅᴇx',
-                                 callback_data=f'index#reject#{chat_id}#{message.id}#{message.from_user.id}'),
-        ]
-    ]
-    reply_markup = InlineKeyboardMarkup(buttons)
-    await bot.send_message(LOG_CHANNEL,
-                           f'#ɪɴᴅᴇx ʀᴇǫᴜᴇsᴛ\n\nʙʏ : {message.from_user.mention} (<code>{message.from_user.id}</code>)\nᴄʜᴀᴛ ɪᴅ / ᴜsᴇʀɴᴀᴍᴇ - <code> {chat_id}</code>\nʟᴀsᴛ ᴍᴇssᴀɢᴇ ɪᴅ - <code>{last_msg_id}</code>\nɪɴᴠɪᴛᴇ ʟɪɴᴋ - {link}',
-                           reply_markup=reply_markup)
-    await message.reply('ᴛʜᴀɴᴋʏᴏᴜ ғᴏʀ ᴛʜᴇ ᴄᴏɴᴛᴇʀɪʙᴜᴛᴛɪᴏɴ, ᴡᴀɪᴛ ғᴏʀ ᴍʏ ᴍᴏᴅᴇʀᴀᴛᴏʀs ᴛᴏ ᴠᴇʀɪғʏ ᴛʜᴇ ғɪʟᴇs.')
-
+    
 
 @Client.on_message(filters.command('setskip') & filters.user(ADMINS))
 async def set_skip_number(bot, message):
