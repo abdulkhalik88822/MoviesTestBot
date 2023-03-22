@@ -4,7 +4,7 @@ motor==2.3.0
 umongo==3.0.1
 heroku3== 5.2.0
 pyrogram==2.0.97
-pyromod==2.0.0
+pyromod==1.5
 tgcrypto== 1.2.5
 requests==2.28.2
 pymongo[srv]==3.12.3
