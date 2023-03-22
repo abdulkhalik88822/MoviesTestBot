@@ -41,11 +41,6 @@ class Media(Document):
         indexes = ('$file_name', )
         collection_name = COLLECTION_NAME
 
-class temp(object):    
-    ME = None
-    CURRENT=int(os.environ.get("SKIP", 2))
-    CANCEL = False
-    
 
 async def save_file(media):
     """Save file in database"""
