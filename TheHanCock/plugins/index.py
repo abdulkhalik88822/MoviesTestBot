@@ -63,7 +63,7 @@ async def batch(client: Client, message: Message):
                     current+=1
                     nyav+=1
                     if nyav == 20:
-                        await msg.edit(f"🖨️ ᴛᴏᴛᴀʟ ᴍᴇssᴀɢᴇs ғᴇᴛᴄʜᴇᴅ|| {current}\n🎬 ᴛᴏᴛᴀʟ ᴍᴇssᴀɢᴇs sᴀᴠᴇᴅ|| {total_files}")
+                        await msg.edit(f"🖨️ ᴛᴏᴛᴀʟ ᴍᴇssᴀɢᴇs ғᴇᴛᴄʜᴇᴅ| {current}\n🎬 ᴛᴏᴛᴀʟ ᴍᴇssᴀɢᴇs sᴀᴠᴇᴅ| {total_files}")
                         nyav -= 20
                     if current == total:
                         break
