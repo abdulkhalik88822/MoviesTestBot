@@ -6,7 +6,7 @@ from config import AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, API_KEY, AUTH_
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters, enums
 from pyrogram.errors import UserNotParticipant
-from TheHanCock.utils import get_filter_results, get_file_details, is_subscribed, get_poster
+from TheHanCock.utils import get_filter_results, get_file_details, is_subscribed, get_poster, search_gagala
 BUTTONS = {}
 BOT = {}
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
