@@ -8,7 +8,6 @@ import logging
 import requests
 from struct import pack
 from pyrogram import enums
-from bs4 import BeautifulSoup
 from pyrogram.types import Message, InlineKeyboardButton
 from config import URL_SHORTNER_API_KEY, URL_SHORTNER_API
 from pyrogram.errors import UserNotParticipant
@@ -195,19 +194,6 @@ async def get_poster(movie):
             pass
     return poster
 
-
-async def search_gagala(text):
-    usr_agent = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
-        'Chrome/61.0.3163.100 Safari/537.36'
-        }
-    text = text.replace(" ", '+')
-    url = f'https://www.google.com/search?q={text}'
-    response = requests.get(url, headers=usr_agent)
-    response.raise_for_status()
-    soup = BeautifulSoup(response.text, 'html.parser')
-    titles = soup.find_all( 'h3' )
-    return [title.getText() for title in titles]
 
 async def get_all(list):
     for y in list:
