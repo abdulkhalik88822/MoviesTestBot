@@ -8,6 +8,7 @@ import logging
 import requests
 from struct import pack
 from pyrogram import enums
+from bs4 import BeautifulSoup
 from pyrogram.types import Message, InlineKeyboardButton
 from config import URL_SHORTNER_API_KEY, URL_SHORTNER_API
 from pyrogram.errors import UserNotParticipant
