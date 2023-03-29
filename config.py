@@ -32,7 +32,7 @@ BOT_TOKEN = "6091738037:AAGiTZ854KaXTUg3ZxAAkSmmYj5b9Fdqwgw"
 
 # --------- ᴀᴅᴍɪɴs ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴜsᴇʀs ---------
 ADMINS = [5709622852, 5416887843, 5807975896]
-CHANNELS = [-1001569112096]
+CHANNELS = [-1001819241311]
 auth_users = []
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 AUTH_CHANNEL = -1001831916389
