@@ -23,13 +23,14 @@ async def group(client, message):
             BOT["username"]=sumit
         files = await get_filter_results(query=search)
         if files:
-            btn.append(
+            btn.append([
                     [
                         InlineKeyboardButton("✅ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ✅", url=f"https://t.me/TheMoviesUpdate/4")
+                    ],
+                    [
+                        InlineKeyboardButton("⊙ ᴅɪʀᴇᴄᴛ ғɪʟᴇ|ᴄʟɪᴄᴋ ʜᴇʀᴇ ⊙", url=f"https://t.me/TheMoviesUpdate/161")
+                    ], 
                     ]
-#                    [
-#                        InlineKeyboardButton("⊙ ᴅɪʀᴇᴄᴛ ғɪʟᴇ|ᴄʟɪᴄᴋ ʜᴇʀᴇ ⊙", url=f"https://t.me/TheMoviesUpdate/161")
-#                    ] 
                 )             
             for file in files:
                 file_id = file.file_id
