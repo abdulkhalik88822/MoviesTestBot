@@ -8,6 +8,6 @@ pyromod==1.5
 tgcrypto== 1.2.5
 requests==2.28.2
 pymongo[srv]==3.11.4
-marshmallow==marshmallow==3.12.2
+marshmallow==3.12.2
 parse-torrent-name
 
