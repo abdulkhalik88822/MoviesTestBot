@@ -47,14 +47,28 @@ URL_SHORTNER_API_KEY = environ.get("URL_SHORTNER_API_KEY", "9e057515d222131456b5
 
 # --------- ᴘɪᴄs ʟɪɴᴋs ---------
 default_pics_links = """
-https://te.legra.ph/file/a30df60e107e11363cb08.jpg
+https://graph.org/file/f24fbacc3927a9876a5b0.jpg
+
+https://graph.org/file/a27705e0576079e7ad3be.jpg
+
+https://graph.org/file/6f6571b3e40119663cf7e.jpg
+
+https://graph.org/file/ae1c0b862bcc9c5c3ddf5.jpg
+
+https://graph.org/file/2191501943b1d071e3381.jpg
+
+https://graph.org/file/13efa9bfd072d82d6a6e9.jpg
+
+https://graph.org/file/ded5ae7cf8bd09779a696.jpg
+
+https://graph.org/file/71040f4d0eb67d382f834.jpg
 """
 PICS = (environ.get('PICS', default_pics_links)).split()
 
 
 # --------- sᴛᴀʀᴛ ᴍᴇsᴀᴀɢᴇs ---------
 default_start_msg = """
-ʜᴇʟʟᴏ
+ʜᴇʟʟᴏ sɪʀ/ᴍᴅᴍ
 ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs 
 ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ 
 ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs
