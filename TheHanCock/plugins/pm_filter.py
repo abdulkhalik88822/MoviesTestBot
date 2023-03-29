@@ -25,14 +25,14 @@ async def group(client, message):
         if files:
             btn.append(
                     [
-                        InlineKeyboardButton("✅ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ✅", url=f"https://t.me/TheMoviesUpdate/4"),
-                    ],
-                    [
-                                        
-                        InlineKeyboardButton("⊙ ᴅɪʀᴇᴄᴛ ғɪʟᴇ|ᴄʟɪᴄᴋ ʜᴇʀᴇ ⊙", url=f"https://t.me/TheMoviesUpdate/161"),
+                        InlineKeyboardButton("✅ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ✅", url=f"https://t.me/TheMoviesUpdate/4")
+                    ]
+                    )
+            btn.append(
+                    [                                       
+                        InlineKeyboardButton("⊙ ᴅɪʀᴇᴄᴛ ғɪʟᴇ|ᴄʟɪᴄᴋ ʜᴇʀᴇ ⊙", url=f"https://t.me/TheMoviesUpdate/161")
                     ] 
-                    
-                )             
+                    )             
             for file in files:
                 file_id = file.file_id
                 filename = f"{get_size(file.file_size)} √ {file.file_name}"
