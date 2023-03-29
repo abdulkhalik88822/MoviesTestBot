@@ -26,8 +26,10 @@ async def group(client, message):
             btn.append(
                     [
                         InlineKeyboardButton("✅ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ✅", url=f"https://t.me/TheMoviesUpdate/4"),
+                    ],
+                    [
                                         
-                        InlineKeyboardButton("⊙ ᴅɪʀᴇᴄᴛ ғɪʟᴇ|ᴄʟɪᴄᴋ ʜᴇʀᴇ ⊙", url=f"https://t.me/TheMoviesUpdate/161")
+                        InlineKeyboardButton("⊙ ᴅɪʀᴇᴄᴛ ғɪʟᴇ|ᴄʟɪᴄᴋ ʜᴇʀᴇ ⊙", url=f"https://t.me/TheMoviesUpdate/161"),
                     ] 
                     
                 )             
