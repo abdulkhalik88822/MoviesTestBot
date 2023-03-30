@@ -83,7 +83,7 @@ async def get_search_results(query, file_type=None, max_results=10, offset=0):
     try:
         regex = re.compile(raw_pattern, flags=re.IGNORECASE)
     except:
-        return [], ''
+        return []
 
     if USE_CAPTION_FILTER:
         filter = {'$or': [{'file_name': regex}, {'caption': regex}]}
@@ -98,6 +98,16 @@ async def get_search_results(query, file_type=None, max_results=10, offset=0):
 
     if next_offset > total_results:
         next_offset = ''
+
+    cursor = Media.find(filter)
+    # Sort by recent
+    cursor.sort('$natural', -1)
+    # Slice files according to offset and max results
+    cursor.skip(offset).limit(max_results)
+    # Get list of files
+    files = await cursor.to_list(length=max_results)
+
+    return files, next_offset
 
     cursor = Media.find(filter)
     # Sort by recent
