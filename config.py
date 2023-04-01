@@ -20,19 +20,19 @@ BROADCAST_ADMIN_ID = [5709622852]
 # --------- ᴍᴏɴɢᴏ ᴅʙ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ---------
 DATABASE_URI = "mongodb+srv://MrsFallenBot:MrsFallenBot@cluster0.hsedwn2.mongodb.net/?retryWrites=true&w=majority"
 DATABASE_NAME = "Cluster0"
-COLLECTION_NAME = 'HanCock_Files'
+COLLECTION_NAME = 'Hinata_Files'     #'HanCock_Files'
 
 
 # --------- ʙᴏᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ---------
 SESSION = 'Media_search'
 API_ID = "18719789"
 API_HASH = "a03c27be3e14aac40f62cb4e95207fae"
-BOT_TOKEN = "6091738037:AAGiTZ854KaXTUg3ZxAAkSmmYj5b9Fdqwgw"
+BOT_TOKEN = "5563935302:AAGdj3RexwQIBqbDFz79T0Uy1icuElp_gpg" #"6091738037:AAGiTZ854KaXTUg3ZxAAkSmmYj5b9Fdqwgw"
 
 
 # --------- ᴀᴅᴍɪɴs ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴜsᴇʀs ---------
 ADMINS = [5709622852, 5416887843, 5807975896]
-CHANNELS = [-1001569112096]
+CHANNELS = [-1001652627420]
 auth_users = []
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 AUTH_CHANNEL = -1001831916389
