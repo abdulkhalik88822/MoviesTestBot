@@ -1,6 +1,6 @@
-from pyrogram import filters, Client, enums
-from config import CHANNELS
+from pyrogram import Client, filters
 from TheHanCock.utils import save_file
+from config import CHANNELS
 
 media_filter = filters.document | filters.video | filters.audio
 
@@ -8,8 +8,8 @@ media_filter = filters.document | filters.video | filters.audio
 @Client.on_message(filters.chat(CHANNELS) & media_filter)
 async def media(bot, message):
     """Media Handler"""
-    for file_type in (enums.MessageMediaType.VIDEO, enums.MessageMediaType.AUDIO, enums.MessageMediaType.DOCUMENT):
-        media = getattr(message, file_type.value, None)
+    for file_type in ("document", "video", "audio"):
+        media = getattr(message, file_type, None)
         if media is not None:
             break
     else:
