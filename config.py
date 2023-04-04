@@ -47,7 +47,18 @@ URL_SHORTNER_API_KEY = environ.get("URL_SHORTNER_API_KEY", "9e057515d222131456b5
 
 # --------- ᴘɪᴄs ʟɪɴᴋs ---------
 default_pics_links = """
-https://te.legra.ph/file/a30df60e107e11363cb08.jpg
+https://graph.org/file/5cc48ce60199bda2ba676.jpg
+
+https://graph.org/file/db5e038720b1578759d7b.jpg
+
+https://graph.org/file/b9468522b4a59624eb169.jpg
+
+https://graph.org/file/164547bf9849d103b0061.jpg
+
+https://graph.org/file/4974ac902f866c40e6197.jpg
+
+https://graph.org/file/b64154792ca4b43e924f1.jpg
+
 """
 PICS = (environ.get('PICS', default_pics_links)).split()
 
